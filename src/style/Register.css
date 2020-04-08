@@ -1,0 +1,19 @@
+@charset = "UTF-8";
+
+input {
+	border: 1px solid #cecece;
+	padding: 4pt;
+	margin: 2pt;
+}
+
+div #date {
+	border: 1px solid #cecece;
+	padding: 4pt;
+	margin: 2pt;
+	width: 21%;
+}
+
+#date input {
+	border: none;
+	width: 40pt;
+}
