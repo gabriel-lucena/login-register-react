@@ -33,10 +33,15 @@ export default class Register extends Component {
 
 		axios.post('http://localhost:5555/register', 
 		{ name, email, password, date, city })
-		.then(res => this.setState(() => ({
-
-		})))
-		.catch(err => console.log(err.message))
+		.then(
+			res => document.getElementById('success').style.display = 'block',
+			document.getElementById('message').style.display = 'none',
+			document.getElementById('warning').style.display = 'none'
+		)
+		.catch(
+			err => document.getElementById('warning').style.display = 'block',
+			document.getElementById('message').style.display = 'none'
+		)
 	}
 
 	render() {

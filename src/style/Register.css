@@ -1,19 +1,30 @@
-@charset = "UTF-8";
-
-input {
-	border: 1px solid #cecece;
-	padding: 4pt;
-	margin: 2pt;
-}
+@charset "UTF-8";
 
 div #date {
-	border: 1px solid #cecece;
+	display: inline-flex;
 	padding: 4pt;
-	margin: 2pt;
+	margin: 4% -.6%;
 	width: 21%;
+	
 }
+
+div #date input::placeholder { color: #bebebe; }
 
 #date input {
 	border: none;
 	width: 40pt;
+	height: 26pt;
+}
+
+body{
+ background-color: #fafafa;
+}
+
+.register{                        /*estrutura da página */
+ width: 70%;
+ margin-top: 10%;
+ margin-left: 30% ;
+}
+.register label{                  /* texto do corpo todo */
+	font-size: 20px;   
 }
