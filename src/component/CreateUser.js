@@ -29,7 +29,7 @@ const CreateUser = ({ name, email, password, day, mounth, year, city,
 							<input id="last_name" type="text" name="name" value={name} 
 							className="validate" required onChange={handleInputChange} />
 							<label htmlFor="last_name">Nome Sobrenome</label>
-							<span className="helper-text">Nome Completo</span>
+							<span className="helper-text">ex: Ashley C. Haggerty</span>
 						</div>
 
 						<div className="input-field">
@@ -37,7 +37,7 @@ const CreateUser = ({ name, email, password, day, mounth, year, city,
               <input className="validate" required id="email" type="email" name="email" value={email}
 							onChange={handleInputChange} />
               <label htmlFor="email">Email</label>  
-              <span className="helper-text" data-error="wrong" data-success="right">Insira seu email</span>                   
+              <span className="helper-text" data-error="wrong" data-success="right">ex: ashley@exemplo.com</span>                   
             </div>
 						
 						<div className="input-field" id="date">
